@@ -1,0 +1,80 @@
+.header {
+    background-color: #000;
+    width           : 100%;
+    height          : 70px;
+
+    nav {
+        .menu {
+
+            .item {
+
+                .item-link {
+                    text-decoration: none;
+                    color          : $white;
+
+                    &:hover {
+                        padding-bottom: 21px;
+                        border-bottom : $yellow solid 4px;
+                        border-radius : 3px;
+                    }
+
+
+                }
+
+
+                .bars {
+                    &:hover {
+
+                        border-bottom: transparent solid 4px;
+
+                    }
+                }
+            }
+
+
+        }
+
+    }
+    a{
+        color: $white !important;
+        text-decoration: none !important;
+    }
+    
+    a:hover{
+        color: $yellow !important;
+    }
+
+}
+
+
+
+
+.dropdown-menu {
+    background-color: black !important;
+    padding: 0;
+
+    .dropdown-item {
+        background-color: black ;
+        color           : white;
+        padding         : 10px 0 10px 25px;
+
+        &:hover {
+            color: $yellow;
+            background-color: #1a1b1d !important;
+        }
+
+        &:focus {
+
+            background-color: #1a1b1d !important;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width : 767px) {
+    .header {
+        height: 100px;
+    }
+}

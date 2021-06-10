@@ -1,4 +1,5 @@
-import Header from "./components/header/Header";
+import Header from "./components/header1/Header";
+
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ArticleDetails from "./pages/articleDetails/ArticleDetails";
 import ArticleList from "./pages/articleList/ArticleList";
@@ -28,6 +29,8 @@ function App() {
       <Router>
 
         <Header />
+
+
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>

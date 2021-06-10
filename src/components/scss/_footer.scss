@@ -1,0 +1,47 @@
+/* footer */
+
+.boxb {
+    background-color: #000;
+    width           : 100%;
+
+}
+
+ul {
+    padding-left : 0;
+    margin-bottom: 0;
+}
+
+.footer-items {
+    list-style: none;
+    a:hover{
+        color: #ffb51f;
+    }
+}
+
+footer {
+    li {
+        padding-bottom: 5px;
+    }
+}
+
+.footer-items a {
+    text-decoration: none;
+    color          : #fff;
+
+
+}
+
+.footer-items p {
+
+    color        : #fff;
+    margin-bottom: 0;
+    cursor       : default;
+
+
+}
+
+.sub {
+    font-weight : lighter;
+    padding-left: 7px;
+    color       : $grey;
+}

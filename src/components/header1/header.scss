@@ -1,0 +1,161 @@
+@import '../scss/colors';
+@import '../scss/base';
+
+
+
+.header {
+    background-color: $black;
+    width           : 100%;
+    height          : 70px;
+
+    nav {
+
+        height         : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+        .logo {}
+
+        .menu {
+            height         : 100%;
+            list-style     : none;
+            display        : flex;
+            flex-direction : row-reverse;
+            align-items    : center;
+            justify-content: flex-end;
+
+
+            .item {
+
+                .item-link {
+                    cursor         : pointer;
+                    user-select    : none;
+                    font-size      : 15px;
+                    font-weight    : 15px;
+                    text-decoration: none;
+                    color          : $white;
+                    margin-right   : 15px;
+                    padding-bottom : 21px;
+                    border-bottom  : transparent solid 4px;
+
+                    &:hover {
+                        padding-bottom       : 23px;
+                        border-bottom        : $yellow solid 4px;
+                        border-radius        : 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius   : 3px;
+                        -ms-border-radius    : 3px;
+                        -o-border-radius     : 3px;
+                    }
+
+
+
+                }
+
+
+
+
+                &.collapse {
+                    position: relative;
+
+
+
+                    .subMenu {
+                        z-index           : 33;
+                        opacity           : 0;
+                        pointer-events    : all;
+                        position          : absolute;
+                        top               : 43px;
+                        right             : 0;
+                        background-color  : $black;
+                        transition        : all 0.3s ease 0.2s;
+                        -webkit-transition: all 0.3s ease 0.2s;
+                        -moz-transition   : all 0.3s ease 0.2s;
+                        -ms-transition    : all 0.3s ease 0.2s;
+                        -o-transition     : all 0.3s ease 0.2s;
+                        width             : 140px;
+
+                        .subMenu-item {
+
+                            font-size: 14px;
+                            width    : 100%;
+
+                            a {
+                                text-decoration: none;
+                                color          : $white;
+                                display        : block;
+                                padding        : 10px;
+                                transition     : all 0.4s ease;
+
+                                -webkit-transition: all 0.4s ease;
+                                -moz-transition   : all 0.4s ease;
+                                -ms-transition    : all 0.4s ease;
+                                -o-transition     : all 0.4s ease;
+
+                                &:hover {
+
+                                    background-color: $dark-grey;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:hover .subMenu {
+                        opacity       : 1;
+                        pointer-events: all;
+
+                    }
+                }
+
+
+
+            }
+
+            .mobileIcon {
+                display: none;
+                cursor : pointer;
+
+                .bars {
+                    border-bottom: none;
+
+
+
+                    &:hover {
+
+                        border-bottom: none;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header {
+        nav {
+            .menu {
+
+                .item {
+                    display: none;
+
+
+                }
+
+                .mobileIcon {
+
+                    display: block !important;
+
+                }
+
+
+            }
+        }
+    }
+
+}

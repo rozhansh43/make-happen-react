@@ -1,0 +1,107 @@
+@import "../colors";
+@import "../mobile-menu";
+@import "../footer";
+@import "../slider";
+@import "../copyRight";
+@import "../shaps";
+@import "../askQuestion";
+@import "../testimony";
+@import "../header";
+
+
+
+
+.banner-container {
+    position         : relative;
+    background-image : url(../img/PortfolioList/bgPortfolioList.png);
+    background-size  : cover;
+    background-repeat: no-repeat;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    height           : 60vh;
+
+    .banner-text {
+        margin-top: -30px;
+        color     : $white;
+        text-align: center;
+
+        h1 {
+            font-size  : 60px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .page-address {
+        width           : 100%;
+        height          : 45px;
+        background-color: rgba(#000, 0.7);
+        position        : absolute;
+        bottom          : 0;
+        display         : flex;
+        justify-content : start;
+        align-items     : center;
+
+        .container {
+            color    : $white;
+            font-size: 16px;
+
+            a {
+                color          : $white;
+                margin-right   : 5px;
+                margin-left    : 5px;
+                text-decoration: none;
+
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+            }
+
+            .path {
+                color: $yellow;
+            }
+        }
+    }
+
+}
+
+.works-nav {
+
+    h1 {
+        text-align : center;
+        color      : $black;
+        font-weight: 700;
+    }
+
+    .rectangle {
+        @extend %rectangle-mini;
+    }
+
+    .works-cards {
+        justify-content: space-evenly;
+    }
+
+    .nav--pagination {
+        display        : flex !important;
+        justify-content: center !important;
+
+        a {
+            color : $yellow;
+            border: $yellow solid 1px;
+        }
+
+        .active-item {
+            color           : $white;
+            background-color: $yellow;
+        }
+    }
+}
+
+
+.copy_right{
+    @extend %copy_right;
+}
